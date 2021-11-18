@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar-X</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="img" style="
+        height: 500px;
+        ">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">STELLAR-X</a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a style="color: #fff; font-weight: 600;" href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff; font-weight: 600;" href="#" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff; font-weight: 600;" href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a style="color: #fff; font-weight: 600;" href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="hop-w">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <script>
+            const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".nav-menu");
+
+            hamburger.addEventListener("click", mobileMenu);
+
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");}
+            </script>
+        </nav>
+        </div>
+        <div class="container-1 background-image">
+            <h1 class="extend">Stellar-X</h1>
+            <p>Stellar-X splits up into 3 categories</p>
+            <div class="text-center">
+                <a href="" class="button-79">Space Events</a>
+                <a href="" class="button-79">Beginning of time</a>
+                <a href="" class="button-79">Learn Page</a>
+            </div>
+        </div>
+        <div class="container-2 text-center">
+            <h1 class="ml15">
+            <span class="word">About</span>
+            <span class="word">Us</span>
+            </h1>
+            <script src="app.js"></script>
+        </div>
+        <div class="container-3 text-center">
+            <div>
+                <button class="button-79 push-1" role="button">Space Events</button>
+                <p>This section showcases upcoming space events around Earth or the viewable space</p>
+                <img class="small wide" src="purplehole.gif" alt="">
+            </div>  
+        </div>
+</header>  
+</body>
+</html>
+
+<!--
+HTML
+
+<h1 class="ml7">
+<span class="text-wrapper">
+<span class="letters">Reality is broken</span>
+</span>
+</h1>
+
+JAVASCRIPT
+
+<script>
+var textWrapper = document.querySelector('.ml7 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml7 .letter',
+    translateY: ["1.1em", 0],
+    translateX: ["0.55em", 0],
+    translateZ: 0,
+    rotateZ: [180, 0],
+    duration: 750,
+    easing: "easeOutExpo",
+    delay: (el, i) => 50 * i
+  }).add({
+    targets: '.ml7',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+CSS
+
+.ml7 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.7em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+-->
+  
