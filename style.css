@@ -175,8 +175,7 @@ a {
   .container-2 {
     background: url(stellar.gif) center center fixed; 
     background-size: cover;
-    height: 800px;
-    width: 100%;
+    max-width: 100%;
   }
   .container-2 h1 {
     padding-top: 300px;
